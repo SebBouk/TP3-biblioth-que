@@ -12,8 +12,8 @@ class Connection extends BaseController
     public function attemptLogin(): string
     {
         $values = $this->request->getPost(['login', 'password']);
-        if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN &&$values['password'] == APP_ADMIN_PASSWORD) {
-            return redirect() ->to('http://localhost:8080/home');
+        if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) {
+            return redirect()->to('/home');
         } else {
             return "On a pas réussi à se connecter !";
         }
