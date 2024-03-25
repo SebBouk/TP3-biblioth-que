@@ -5,6 +5,6 @@ class Connection extends BaseController
 {
     public function index(): string
     {
-        return "hello;"
-    }
+        return "hello";
+}
 }
