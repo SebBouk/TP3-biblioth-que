@@ -1,7 +1,6 @@
 <?php
 namespace App\Controllers;
 
-use SebastianBergmann\Type\VoidType;
 
 class Connection extends BaseController
 {
