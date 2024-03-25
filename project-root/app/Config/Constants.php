@@ -97,6 +97,3 @@ define('APP_ADMIN_LOGIN', 'administrator');
 
 define ('APP_ADMIN_PASSWORD', 'toto');
 
-define('APP_ADMIN_LOGIN','administrator');
-
-define('APP_ADMIN_PASSWORD','toto');
