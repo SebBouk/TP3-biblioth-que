@@ -12,7 +12,8 @@ class Connection extends BaseController
     {
         $values = $this->request->getPost(['login', 'password']);
         if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) {
-            return redirect()->to('/home');
+            return view('welcome_message');
+            #redirect()->to('/home');
         } else {
             return "On a pas réussi à se connecter !";
         }
