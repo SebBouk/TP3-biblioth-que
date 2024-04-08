@@ -8,12 +8,12 @@ class Connection extends BaseController
     {
         return view("login_form");
     }
-    public function attemptLogin(): string
+    public function attemptLogin()
     {
         $values = $this->request->getPost(['login', 'password']);
         if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) {
-            return view('welcome_message');
-            #redirect()->to('/home');
+            // return view('welcome_message');
+            return redirect()->to('/home');
         } else {
             return "On a pas réussi à se connecter !";
         }
