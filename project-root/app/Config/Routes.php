@@ -10,3 +10,4 @@ $routes->get('/', 'Home::index');
 $routes->get('/login','Connection::index');
 $routes->post('/login','Connection::attemptLogin');
 $routes->get('/home','Home::index');
+$routes->get('/addUser','AddUser::index');

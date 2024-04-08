@@ -17,5 +17,6 @@ admin</label>
 <input id="password" name="password" type="password" />
 <button type="submit">Se connecter</button>
 </form>
+<a href = "/addUser">Nouvel utilisateur</a>
 </body>
 </html>
