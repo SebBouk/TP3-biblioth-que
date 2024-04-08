@@ -4,10 +4,15 @@ namespace App\Controllers;
 
 class Connection extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        return view("login_form");
+        $template =
+        view('templates/header.php') .
+        view('login_form.php') .
+        view('templates/footer.php');
+        return $template;
     }
+
     public function attemptLogin()
     {
         $values = $this->request->getPost(['login', 'password']);
