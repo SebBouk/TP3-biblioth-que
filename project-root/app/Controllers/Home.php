@@ -8,7 +8,9 @@ class Home extends BaseController
     {
        $template =
        view('template/templateHeader.php').
-       view('login_form.php').
+       view('welcome_message.php').
        view('template/templateFooter.php');
+
+       return $template;
     }
 }
