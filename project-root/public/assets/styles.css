@@ -65,3 +65,17 @@ header .menu-toggle button:focus {
     background-color: rgba(221, 72, 20, .8);
     color: rgba(255, 255, 255, .8);
 }
+
+body{
+    background-image: url("/assets/Bibilotheque alexandrie.jpg");    
+    background-size: cover;
+}
+header{
+    backdrop-filter: blur(50px)
+}
+footer{
+    backdrop-filter: blur(50px);
+}
+h1{
+    backdrop-filter: blur(50px);
+}
