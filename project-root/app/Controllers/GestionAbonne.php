@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class GestionAbonne extends BaseController
 {
     public function index()
     {
@@ -12,7 +12,7 @@ class Home extends BaseController
         'loggedIn' => $session->get('loggedIn'),
         'name' => $session->get('username')
         ]).
-        view('homePage').
+        view('gestionAbonne').
         view('templates/footer.php');
 
         return $template;

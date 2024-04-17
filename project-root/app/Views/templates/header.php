@@ -20,9 +20,9 @@
                 <button id="menuToggle">&#9776;</button>
             </li>
             <li class="menu-item hidden"><a href="/home">Home</a></li>
-            <li class="menu-item hidden"><a href="https://codeigniter.com/user_guide/" target="_blank">Docs</a>
+            <li class="menu-item hidden"><a href="/gestionAbonne">Gestion des abonnes</a>
             </li>
-            <li class="menu-item hidden"><a href="https://forum.codeigniter.com/" target="_blank">Community</a></li>
+            <li class="menu-item hidden"><a href="/gestionLivre" >Gestion des livres</a></li>
             <li class="menu-item hidden"><a href="https://codeigniter.com/contribute" target="_blank">Contribute</a>
             </li>
         </ul>
