@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-class AddUser extends BaseController
+class GestionAbonne extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         $session = session();
         $template =
@@ -12,7 +12,7 @@ class AddUser extends BaseController
         'loggedIn' => $session->get('loggedIn'),
         'name' => $session->get('username')
         ]).
-        view('add-user').
+        view('gestionAbonne').
         view('templates/footer.php');
 
         return $template;

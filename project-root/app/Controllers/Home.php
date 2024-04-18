@@ -12,7 +12,7 @@ class Home extends BaseController
         'loggedIn' => $session->get('loggedIn'),
         'name' => $session->get('username')
         ]).
-        view('welcome_message').
+        view('homePage').
         view('templates/footer.php');
 
         return $template;
