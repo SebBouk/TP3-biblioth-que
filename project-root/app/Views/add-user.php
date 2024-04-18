@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-</head>
+
 <h1>Nouvel Utilisateur</h1>
 <form action="add-user.php" method="POST">
  <div class="input-field">
@@ -44,4 +38,3 @@ initial-scale=1.0">
  </div>
  <button type="submit">Ajouter</button>
  </form>
- </html>

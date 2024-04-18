@@ -1,5 +1,7 @@
 h1 {
     text-align: center;
+    backdrop-filter: blur(50px);
+    color: blanchedalmond;
 }
 .menu {
     padding: .4rem 2rem;
@@ -17,7 +19,7 @@ header li {
 }
 header li a {
     border-radius: 5px;
-    color: rgba(0, 0, 0, .5);
+    color: blanchedalmond;
     display: block;
     height: 44px;
     text-decoration: none;
@@ -71,11 +73,39 @@ body{
     background-size: cover;
 }
 header{
-    backdrop-filter: blur(50px)
+    backdrop-filter: blur(50px);
+    color: blanchedalmond;
 }
 footer{
     backdrop-filter: blur(50px);
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    text-align: center;
+    color: blanchedalmond;
 }
-h1{
+div#connexion{
     backdrop-filter: blur(50px);
+    text-align: center;
+    margin-right: 30%;
+    margin-left : 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+button{
+    background-color: brown;
+    color: blanchedalmond;
+    border: 1px blanchedalmond solid;
+    box-shadow: 3px 3px 10px blanchedalmond;
+}
+input{
+    background-color: brown;
+    color: blanchedalmond;
+    border-radius: 5%;
+    box-shadow: 3px 3px 10px blanchedalmond;
+}
+::placeholder{
+    color: blanchedalmond;
+    opacity: 50%;
 }

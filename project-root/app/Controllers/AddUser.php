@@ -6,6 +6,15 @@ class AddUser extends BaseController
 {
     public function index(): string
     {
-        return view('add-user');
+        $session = session();
+        $template =
+        view('templates/header.php',[
+        'loggedIn' => $session->get('loggedIn'),
+        'name' => $session->get('username')
+        ]).
+        view('add-user').
+        view('templates/footer.php');
+
+        return $template;
     }
 }
