@@ -13,7 +13,7 @@
     <?php if (isset($loggedIn) && $loggedIn == true) : ?>
         <span>Bonjour, <?= esc($name) ?></span>
     <?php endif ?>
-
+    
     <div class="menu">
         <ul>
             <li class="menu-toggle">

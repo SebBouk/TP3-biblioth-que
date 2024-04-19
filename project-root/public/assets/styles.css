@@ -97,11 +97,13 @@ button{
     background-color: brown;
     color: blanchedalmond;
     border: 1px blanchedalmond solid;
+     border-radius: 5%;
     box-shadow: 3px 3px 10px blanchedalmond;
 }
 input{
     background-color: brown;
     color: blanchedalmond;
+    border: 1px blanchedalmond solid;
     border-radius: 5%;
     box-shadow: 3px 3px 10px blanchedalmond;
 }
@@ -113,11 +115,20 @@ table{
     backdrop-filter: blur(50px);
     color: blanchedalmond;
     border-right: 1px blanchedalmond solid;
+    border-collapse: collapse;
     text-align: center;
     margin: auto;
 }
-th, td{
-    border-bottom: 1px blanchedalmond solid;
-    margin : auto;
-    padding : 1.5%;
+td, th{
+    border: 1px blanchedalmond solid;
+    border-collapse : collapse;
+    padding : 20px;
+
+}
+@font-face{
+    font-family: 'baskerville';
+    src:url('LibreBaskerville-Regular.ttf') format('truetype')
+}
+*{
+    font-family: 'baskerville';
 }
