@@ -78,7 +78,7 @@ header{
 }
 footer{
     backdrop-filter: blur(50px);
-    position: absolute;
+    position: relative;
     bottom: 0; left: 0; right: 0;
     text-align: center;
     color: blanchedalmond;
@@ -108,4 +108,16 @@ input{
 ::placeholder{
     color: blanchedalmond;
     opacity: 50%;
+}
+table{
+    backdrop-filter: blur(50px);
+    color: blanchedalmond;
+    border-right: 1px blanchedalmond solid;
+    text-align: center;
+    margin: auto;
+}
+th, td{
+    border-bottom: 1px blanchedalmond solid;
+    margin : auto;
+    padding : 1.5%;
 }
