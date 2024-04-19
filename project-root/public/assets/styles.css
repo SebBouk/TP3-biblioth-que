@@ -78,7 +78,7 @@ header{
 }
 footer{
     backdrop-filter: blur(50px);
-    position: absolute;
+    position: relative;
     bottom: 0; left: 0; right: 0;
     text-align: center;
     color: blanchedalmond;
@@ -97,15 +97,38 @@ button{
     background-color: brown;
     color: blanchedalmond;
     border: 1px blanchedalmond solid;
+     border-radius: 5%;
     box-shadow: 3px 3px 10px blanchedalmond;
 }
 input{
     background-color: brown;
     color: blanchedalmond;
+    border: 1px blanchedalmond solid;
     border-radius: 5%;
     box-shadow: 3px 3px 10px blanchedalmond;
 }
 ::placeholder{
     color: blanchedalmond;
     opacity: 50%;
+}
+table{
+    backdrop-filter: blur(50px);
+    color: blanchedalmond;
+    border-right: 1px blanchedalmond solid;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+td, th{
+    border: 1px blanchedalmond solid;
+    border-collapse : collapse;
+    padding : 20px;
+
+}
+@font-face{
+    font-family: 'baskerville';
+    src:url('LibreBaskerville-Regular.ttf') format('truetype')
+}
+*{
+    font-family: 'baskerville';
 }
