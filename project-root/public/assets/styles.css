@@ -120,6 +120,9 @@ table{
     text-align: center;
     margin: auto;
 }
+th{
+    font-size:150%;
+}
 td, th{
     border: 1px blanchedalmond solid;
     border-collapse : collapse;
