@@ -78,6 +78,7 @@ header{
 }
 footer{
     backdrop-filter: blur(50px);
+    align-items: center;
     position: relative;
     bottom: 0; left: 0; right: 0;
     text-align: center;
@@ -131,4 +132,11 @@ td, th{
 }
 *{
     font-family: 'baskerville';
+}
+#footerHome{
+    backdrop-filter: blur(50px);
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    text-align: center;
+    color: blanchedalmond;
 }
