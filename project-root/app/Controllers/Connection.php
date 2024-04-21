@@ -9,7 +9,7 @@ class Connection extends BaseController
         $template =
         view('templates/header.php') .
         view('login_form.php') .
-        view('templates/footer.php');
+        view('templates/footerHome.php');
         return $template;
     }
 
