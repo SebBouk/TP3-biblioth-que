@@ -10,6 +10,7 @@
                 <th>Adresse</th>
                 <th>N° de téléphone</th>
                 <th>Classe socio professionnel</th>
+                <input type="button" value="Nouvel utilisateur" onclick="window.location='/addUser';"/>
             </tr>
         </thead>
         <tbody>
