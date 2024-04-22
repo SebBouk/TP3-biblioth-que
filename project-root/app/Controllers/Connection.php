@@ -9,7 +9,7 @@ class Connection extends BaseController
         $template =
         view('templates/header.php') .
         view('login_form.php') .
-        view('templates/footer.php');
+        view('templates/footerHome.php');
         return $template;
     }
 
@@ -40,7 +40,7 @@ class Connection extends BaseController
         $session = session();
         $session->set([
             'username' => isset($user) ? ($user['matricule_abonne'] . " " . strtoupper($user['nom_abonne'])) : 'Administrator',
-            'role' => isset($user)  ? 'user' : 'admin' ,
+            'role' => isset($user) ? 'user' : 'admin',
             'loggedIn' => true
             
                 ]);
