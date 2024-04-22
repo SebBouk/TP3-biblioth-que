@@ -6,11 +6,15 @@ class Home extends BaseController
 {
     public function index()
     {
-       $template =
-       view('templates/header.php') .
-       view('welcome_message.php') .
-       view('templates/footer.php');
+        $session = session();
+        $template =
+        view('templates/header.php',[
+        'loggedIn' => $session->get('loggedIn'),
+        'name' => $session->get('username')
+        ]).
+        view('homePage').
+        view('templates/footerHome.php');
 
-       return $template;
+        return $template;
     }
 }

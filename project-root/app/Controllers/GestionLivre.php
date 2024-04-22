@@ -2,17 +2,21 @@
 
 namespace App\Controllers;
 
-class AddUser extends BaseController
+class GestionLivre extends BaseController
 {
-    public function index(): string
+    public function index()
     {
+        $Livre = model(\App\Models\Livre::class);
+        $livres = $Livre->getLivre();
+        $data['livres']=$livres;
+        //var_dump($livres);
         $session = session();
         $template =
         view('templates/header.php',[
         'loggedIn' => $session->get('loggedIn'),
         'name' => $session->get('username')
         ]).
-        view('add-user').
+        view('gestionLivre',$data).
         view('templates/footer.php');
 
         return $template;
