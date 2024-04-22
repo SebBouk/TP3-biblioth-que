@@ -143,3 +143,13 @@ td, th{
     text-align: center;
     color: blanchedalmond;
 }
+#deconnexion{    
+    background-color: brown;
+    color: blanchedalmond;
+    border: 1px blanchedalmond solid;
+    border-radius: 5%;
+    box-shadow: 3px 3px 10px blanchedalmond;
+    text-decoration: none;
+    padding: 2px;
+    font-size: small;
+}
