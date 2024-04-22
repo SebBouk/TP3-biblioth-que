@@ -11,7 +11,8 @@
 <header>
     <h1>ESICAD - Gestion de Bibliothèque</h1>
     <?php if (isset($loggedIn) && $loggedIn == true) : ?>
-        <span>Bonjour, <?= esc($name) ?></span>
+        <span>Bonjour, <?= esc($name) ?></span><br>
+        <a href="/logout">Déconnexion</a>
     <?php endif ?>
     
     <div class="menu">
