@@ -1,0 +1,16 @@
+/* CSS pour intégrer les images en pleine page avec un mouvement coulissant */
+
+.imagePleinePage {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+  }
+  
+  .imageCoulissante {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .imageOuverte {
+    transform: translateX(50%);
+  }
+  
