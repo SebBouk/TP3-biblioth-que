@@ -10,5 +10,6 @@ $routes->get('/home','Home::index', ['filter' => \App\Filters\AuthenticatedFilte
 $routes->get('/login','Connection::index');
 $routes->post('/login','Connection::attemptLogin');
 $routes->get('/addUser','AddUser::index');
-$routes->get('gestionAbonne','GestionAbonne::index');
+$routes->get('gestionAbonne','GestionAbonne::index', ['filter' => \App\Filters\AuthenticatedFilter::class]);
 $routes->get('gestionLivre','GestionLivre::index');
+$routes->get('/logout','Connection::logout');
