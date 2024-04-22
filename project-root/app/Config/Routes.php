@@ -10,5 +10,5 @@ $routes->get('/home','Home::index', ['filter' => 'authenticatedUser']);
 $routes->get('/login','Connection::index');
 $routes->post('/login','Connection::attemptLogin');
 $routes->get('/addUser','AddUser::index',['filter' => 'authenticatedUser']);
-$routes->get('gestionAbonne','GestionAbonne::index',['filter' => 'authenticatedAdmin']);
-$routes->get('gestionLivre','GestionLivre::index',['filter' => 'authenticatedUser']);
+$routes->get('/gestionAbonne','GestionAbonne::index',['filter' => 'authenticatedAdmin']);
+$routes->get('/gestionLivre','GestionLivre::index',['filter' => 'authenticatedUser']);
