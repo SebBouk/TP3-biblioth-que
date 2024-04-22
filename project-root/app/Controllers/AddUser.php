@@ -13,7 +13,7 @@ class AddUser extends BaseController
         'name' => $session->get('username')
         ]).
         view('add-user').
-        view('templates/footer.php');
+        view('templates/footerHome.php');
 
         return $template;
     }
