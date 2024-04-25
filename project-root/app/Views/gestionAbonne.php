@@ -1,5 +1,8 @@
 <body>
     <h1>Bienvenue sur la page de gestion des abonnes</h1>
+    <div id="newUser">
+    <input type="button" value="Nouvel utilisateur" onclick="window.location='/addUser';"/>
+    </div>
     <table>
         <thead>
             <tr>
@@ -10,7 +13,6 @@
                 <th>Adresse</th>
                 <th>N° de téléphone</th>
                 <th>Classe socio professionnel</th>
-                <input type="button" value="Nouvel utilisateur" onclick="window.location='/addUser';"/>
             </tr>
         </thead>
         <tbody>
