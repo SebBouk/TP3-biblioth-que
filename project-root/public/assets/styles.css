@@ -113,6 +113,7 @@ input{
     opacity: 50%;
 }
 table{
+    background-color: rgba(0, 0, 0, 0.588);
     backdrop-filter: blur(50px);
     color: blanchedalmond;
     border-right: 1px blanchedalmond solid;
