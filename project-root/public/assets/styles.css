@@ -111,6 +111,7 @@ input{
     border: 1px blanchedalmond solid;
     border-radius: 5%;
     box-shadow: 3px 3px 10px blanchedalmond;
+    margin-bottom: 10px ;
 }
 ::placeholder{
     color: blanchedalmond;
@@ -157,7 +158,8 @@ td, th{
     text-decoration: none;
     padding: 2px;
     font-size: small;
-}
+    margin-top: 10px;
+    }
 #container{
     background-color: rgba(0, 0, 0, 0.445);
     backdrop-filter: blur(50px);
@@ -171,4 +173,8 @@ td, th{
     display: flex;
     justify-content: center;
     margin-bottom: 1%;
+}
+#gestionAbonne{
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.588); 
 }
