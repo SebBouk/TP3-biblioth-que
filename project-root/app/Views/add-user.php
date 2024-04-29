@@ -1,6 +1,6 @@
 <div id="container">
     <h1>Nouvel Utilisateur</h1>
-    <form action="add-user.php" method="POST">
+    <form action="addUser" method="POST">
         <div class="input-field">
             <label for="nom_abonne">Votre nom : </label>
             <input id="nom_abonne" type="text" name="nom_abonne" placeholder="Saisir votre nom..." />

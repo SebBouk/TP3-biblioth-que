@@ -17,4 +17,8 @@ class AddUser extends BaseController
 
         return $template;
     }
+    public function Add_User(){
+        $newUser = new \App\Models\Gestion_Abonne();
+        $values = $this->request->getPost(['nom_abonne','date_de_naissance','adresse_abonne','telephone_abonne','CSP_abonne']);
+    }
 }
