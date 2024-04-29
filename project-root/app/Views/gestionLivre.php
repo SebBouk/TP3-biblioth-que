@@ -1,6 +1,8 @@
 <body>
     <h1>Bienvenue sur la page de gestion des livres</h1>
+    <div id="newLivre">
     <input type="button" value="Nouveau Livre" onclick="window.location='/add-livre';"/>
+    </div>
     <table>
         <thead>
             <tr>

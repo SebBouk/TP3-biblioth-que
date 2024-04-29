@@ -188,3 +188,8 @@ td, th{
     margin-right: 30%;
     margin-left: 30%;
 }
+#newLivre{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
