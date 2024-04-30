@@ -22,4 +22,7 @@ class Gestion_Abonne extends Model
     {
         return $this->findAll();
     }
+    public function addAbo($data){
+        $this->where('nom_abonne',$data['nom_abonne'])->insert($data);
+    }
 }

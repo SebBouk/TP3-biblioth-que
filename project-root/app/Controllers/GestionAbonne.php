@@ -8,7 +8,7 @@ class GestionAbonne extends BaseController
     {
         $GestionAbonne = model(\App\Models\Gestion_Abonne::class);
         $abonnes = $GestionAbonne->getAbonnes();
-        $data['abonnes']=$abonnes;
+        $data['abonnes'] = $abonnes;
         //var_dump($abonnes);
         $session = session();
         $template =
@@ -21,22 +21,27 @@ class GestionAbonne extends BaseController
 
         return $template;
     }
-        public function formulaireAdd(): string
+    public function formulaireAdd()
     {
+        $newUser = model(\App\Models\Gestion_Abonne::class);
+        $newUsers = $newUser->getAbonnes();
+        $data['newusers'] = $newUsers;
         $session = session();
         $template =
-        view('templates/header.php',[
-        'loggedIn' => $session->get('loggedIn'),
-        'name' => $session->get('username')
-        ]).
-        view('add-user').
-        view('templates/footerHome.php');
+            view('templates/header.php', [
+                'loggedIn' => $session->get('loggedIn'),
+                'name' => $session->get('username')
+            ]) .
+            view('add-user', $data) .
+            view('templates/footerHome.php');
 
         return $template;
     }
-    public function Add_User(){
-        $newUser = new \App\Models\Gestion_Abonne();
-        $values = $this->request->getPost(['nom_abonne','date_de_naissance','adresse_abonne','telephone_abonne','CSP_abonne']);
+    public function AJouteAbonne()
+    {
+        $abonne = model(\App\Models\Gestion_Abonne::class);
+        $values = $this->request->getPost(['nom_abonne', 'date_naissance_abonne', 'date_adhesion_abonne', 'adresse_abonne', 'telephone_abonne', 'CSP_abonne']);
+        $abonne->addAbo($values);
         return redirect()->to('gestionAbonne');
     }
 }
