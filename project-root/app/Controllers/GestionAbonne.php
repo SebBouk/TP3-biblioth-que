@@ -51,4 +51,12 @@ class GestionAbonne extends BaseController
         $abonnes = $abonne->SuppAbonne($matricule);
         return redirect()->to('gestionAbonne');
     }
+    public function ModifyAbonne() {
+        $abonne = model(\App\Models\Gestion_Abonne::class);
+        $matricule = $this->request->getGet();
+        $values = $this->request->getPost(['matricule_abonne','nom_abonne', 'date_naissance_abonne', 'date_adhesion_abonne', 'adresse_abonne', 'telephone_abonne', 'CSP_abonne']);
+        $abonnes = $abonne->ModifyAbonne($values);
+        
+        return redirect()->to('gestionAbonne');
+    }
 }

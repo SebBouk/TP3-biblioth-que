@@ -26,7 +26,8 @@
                 <td><?php echo $abonne['adresse_abonne']; ?></td>
                 <td><?php echo $abonne['telephone_abonne']; ?></td>
                 <td><?php echo $abonne['CSP_abonne']; ?></td>
-                <td><a href="/supprimeAbo?matricule_abonne=<?= $abonne['matricule_abonne'] ?>">Supprimer</a></td>
+                <td><a href="/supprimeAbo?matricule_abonne=<?= $abonne['matricule_abonne'] ?>">Supprimer</a>
+                <a href="/modifyUser?matricule_abonne=<?= $abonne['matricule_abonne'] ?>">Modifier</a></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
