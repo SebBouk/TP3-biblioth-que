@@ -29,8 +29,11 @@ class Gestion_Abonne extends Model
     {
         $this->where('matricule_abonne',$matricule)->delete();
     }
-    function ModifyAbonne($data)
+    function modifyAbonne($data)
     {
-        return $this->where($data['matricule_abonne'], $data)->update($data);
+        return $this->update($data['matricule_abonne'], $data);
+    }
+    public function recup($matricule){
+        return $this->where('matricule_abonne',$matricule)->findAll();
     }
 }

@@ -193,3 +193,14 @@ td, th{
     justify-content: center;
     margin-bottom: 1%;
 }
+a{
+    background-color: brown;
+    color: blanchedalmond;
+    border: 1px blanchedalmond solid;
+    border-radius: 5%;
+    box-shadow: 3px 3px 10px blanchedalmond;
+    text-decoration: none;
+    padding: 2px;
+    font-size: small;
+    margin-top: 10px;
+}

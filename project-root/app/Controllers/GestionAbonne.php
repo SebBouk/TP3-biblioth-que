@@ -37,6 +37,24 @@ class GestionAbonne extends BaseController
 
         return $template;
     }
+    public function Modif()
+    {
+        $matricule = $this->request->getGet();
+        $GestionAbonne = model(\App\Models\Gestion_Abonne::class);
+        $abonnes = $GestionAbonne->recup($matricule);
+        $data['abonnes'] = $abonnes;
+        //var_dump($abonnes);
+        $session = session();
+        $template =
+            view('templates/header.php', [
+                'loggedIn' => $session->get('loggedIn'),
+                'name' => $session->get('username')
+            ]) .
+            view('modify-user', $data) .
+            view('templates/footerHome.php');
+
+        return $template;
+    }
     public function AJouteAbonne()
     {
         $abonne = model(\App\Models\Gestion_Abonne::class);
@@ -51,12 +69,14 @@ class GestionAbonne extends BaseController
         $abonnes = $abonne->SuppAbonne($matricule);
         return redirect()->to('gestionAbonne');
     }
+    public function AfficheModif(){
+        $matricule = $this->request->getGet();
+    }
     public function ModifyAbonne() {
         $abonne = model(\App\Models\Gestion_Abonne::class);
-        $matricule = $this->request->getGet();
         $values = $this->request->getPost(['matricule_abonne','nom_abonne', 'date_naissance_abonne', 'date_adhesion_abonne', 'adresse_abonne', 'telephone_abonne', 'CSP_abonne']);
-        $abonnes = $abonne->ModifyAbonne($values);
-        
+        $abonne->modifyAbonne($values);  
         return redirect()->to('gestionAbonne');
     }
+
 }

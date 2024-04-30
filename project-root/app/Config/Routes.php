@@ -16,5 +16,5 @@ $routes->get('/logout','Connection::logout');
 $routes->get('/add-livre','AddLivre::index' ,['filter'=> 'authenticatedAdmin']);
 $routes->post('/addUser','GestionAbonne::AJouteAbonne');
 $routes->get('/supprimeAbo', 'GestionAbonne::SupprimeAbonne');
-$routes->get('/modifyUser','GestionAbonne::ModifyAbonne');
+$routes->get('/modifyUser','GestionAbonne::Modif');
 $routes->post('/modifyUser','GestionAbonne::ModifyAbonne');
