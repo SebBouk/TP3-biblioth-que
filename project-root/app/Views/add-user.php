@@ -2,20 +2,16 @@
     <h1>Nouvel Utilisateur</h1>
     <form action="addUser" method="POST">
         <div class="input-field">
-            <label for="firstname">Votre prénom : </label>
-            <input id="firstname" type="text" name="firstname" placeholder="Saisir votre prénom..." />
+            <label for="nom_abonne">Votre nom : </label>
+            <input id="nom_abonne" type="text" name="nom_abonne" placeholder="Saisir votre nom..." />
         </div>
         <div class="input-field">
-            <label for="lastname">Votre nom : </label>
-            <input id="lastname" type="text" name="lastname" placeholder="Saisir votre nom..." />
+            <label for="date_naissance_abonne">Votre date de naissance : </label>
+            <input id="date_naissance_abonne" type="date" name="date_naissance_abonne" placeholder="Saisir votre date de naissance..." />
         </div>
         <div class="input-field">
-            <label for="dob">Votre date de naissance : </label>
-            <input id="dob" type="date" name="dob" placeholder="Saisir votre date de naissance..." />
-        </div>
-        <div class="input-field">
-            <label for="dob">Votre date d'adhésion : </label>
-            <input id="dob" type="date" name="dob" placeholder="Saisir votre date d'adhesion ..." />
+            <label for="date_adhesion_abonne">Votre date d'adhésion : </label>
+            <input id="date_adhesion_abonne" type="date" name="date_adhesion_abonne" placeholder="Saisir votre date d'adhesion ..." />
         </div>
         <div class="input-field">
             <label for="adresse_abonne">Votre adresse : </label>
