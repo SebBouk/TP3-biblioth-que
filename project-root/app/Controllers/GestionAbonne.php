@@ -44,4 +44,11 @@ class GestionAbonne extends BaseController
         $abonne->addAbo($values);
         return redirect()->to('gestionAbonne');
     }
+    public function SupprimeAbonne()
+    {
+        $matricule = $this->request->getGet();
+        $abonne = model(\App\Models\Gestion_Abonne::class);
+        $abonnes = $abonne->SuppAbonne($matricule);
+        return redirect()->to('gestionAbonne');
+    }
 }

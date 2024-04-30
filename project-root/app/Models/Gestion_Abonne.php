@@ -25,4 +25,9 @@ class Gestion_Abonne extends Model
     public function addAbo($data){
         $this->where('nom_abonne',$data['nom_abonne'])->insert($data);
     }
+    function SuppAbonne($matricule)
+    {
+        $this->where('matricule_abonne',$matricule)->delete();
+    }
+    
 }
